@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Dalfay | Global Vehicle Sourcing, Export, and Brokerage</title>
+  <meta name="description" content="Dalfay is a global vehicle sourcing, export, and brokerage company helping businesses and individuals access vehicles from the United States with custom consulting, end-to-end coordination, and flexible delivery solutions.">
+  <meta name="keywords" content="Dalfay, car export, vehicle export, car brokerage, auto import solutions, auction vehicle sourcing, used car export, overseas car shipping, U.S. car auctions, dealer import solutions">
+
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --dalfay-black: #111111;
+      --dalfay-green: #55b948;
+      --dalfay-green-dark: #2f7f37;
+      --dalfay-green-soft: rgba(85, 185, 72, 0.08);
+      --dalfay-white: #ffffff;
+      --dalfay-text: #1d1d1d;
+      --dalfay-muted: #676767;
+      --dalfay-line: rgba(0, 0, 0, 0.08);
+      --dalfay-soft-bg: #fbfbfb;
+      --dalfay-hero-bg: #fcfcfc;
+      --dalfay-footer: #0f2230;
+      --dalfay-shadow: 0 24px 70px rgba(0, 0, 0, 0.06);
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--dalfay-text);
+      background: #fff;
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .navmenu a,
+    .sitename {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    .header {
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+    }
+
+    .branding {
+      min-height: 96px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo img {
+      width: auto;
+      height: 72px;
+      max-height: 72px;
+      display: block;
+      object-fit: contain;
+    }
+
+    .navmenu a,
+    .navmenu a:focus {
+      color: var(--dalfay-black);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 0.2px;
+    }
+
+    .navmenu a:hover,
+    .navmenu .active,
+    .navmenu .active:focus {
+      color: var(--dalfay-green-dark);
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at top right, rgba(85, 185, 72, 0.07), transparent 24%),
+        radial-gradient(circle at bottom left, rgba(85, 185, 72, 0.05), transparent 22%),
+        linear-gradient(180deg, #ffffff 0%, var(--dalfay-hero-bg) 100%);
+      padding: 80px 0 140px;
+    }
+
+    .hero .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--dalfay-green-dark);
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(44px, 7vw, 92px);
+      line-height: 0.98;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 28px;
+      letter-spacing: -1.5px;
+      max-width: 1100px;
+    }
+
+    .hero h1 .accent {
+      color: var(--dalfay-green-dark);
+    }
+
+    .hero p.hero-lead {
+      font-size: clamp(19px, 2vw, 25px);
+      line-height: 1.9;
+      color: var(--dalfay-muted);
+      max-width: 930px;
+      margin-bottom: 0;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 38px;
+      margin-bottom: 90px;
+    }
+
+    .btn-main,
+    .btn-outline-main {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 30px;
+      border-radius: 999px;
+      font-size: 15px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .btn-main {
+      background: var(--dalfay-black);
+      color: #fff;
+      border: 2px solid var(--dalfay-black);
+    }
+
+    .btn-main:hover {
+      background: #000;
+      border-color: #000;
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .btn-outline-main {
+      background: transparent;
+      color: var(--dalfay-black);
+      border: 2px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .btn-outline-main:hover {
+      background: var(--dalfay-green-soft);
+      border-color: var(--dalfay-green-dark);
+      color: var(--dalfay-green-dark);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+      max-width: 1020px;
+      margin-top: 0;
+    }
+
+    .hero-stat {
+      background: #fff;
+      border: 1px solid var(--dalfay-line);
+      border-radius: 24px;
+      padding: 34px 30px;
+      box-shadow: var(--dalfay-shadow);
+    }
+
+    .hero-stat h3 {
+      font-size: 38px;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 8px;
+    }
+
+    .hero-stat p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--dalfay-muted);
+      margin: 0;
+    }
+
+    .section {
+      padding: 150px 0;
+    }
+
+    .light-section {
+      background: var(--dalfay-soft-bg);
+    }
+
+    .section-title {
+      text-align: left;
+      margin-bottom: 70px;
+    }
+
+    .section-title h2 {
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dalfay-green-dark);
+      margin-bottom: 16px;
+    }
+
+    .section-title p {
+      font-size: clamp(38px, 4vw, 64px);
+      line-height: 1.08;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin: 0;
+      max-width: 1000px;
+    }
+
+    .story-card,
+    .service-card,
+    .backbone-box,
+    .coverage-box,
+    .process-step {
+      background: #fff;
+      border: 1px solid var(--dalfay-line);
+      border-radius: 30px;
+      box-shadow: var(--dalfay-shadow);
+    }
+
+    .story-card {
+      padding: 46px;
+      height: 100%;
+    }
+
+    .story-card h3 {
+      font-size: 32px;
+      line-height: 1.16;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 18px;
+    }
+
+    .story-card p {
+      font-size: 18px;
+      line-height: 2;
+      color: var(--dalfay-muted);
+      margin: 0;
+    }
+
+    .mission-panel {
+      background: linear-gradient(135deg, #111111 0%, #1f1f1f 100%);
+      border-radius: 34px;
+      padding: 54px;
+      box-shadow: 0 28px 80px rgba(0, 0, 0, 0.14);
+      margin-top: 42px;
+    }
+
+    .mission-panel h3 {
+      font-size: clamp(36px, 4vw, 56px);
+      line-height: 1.08;
+      font-weight: 900;
+      color: #fff;
+      margin-bottom: 20px;
+      max-width: 1000px;
+    }
+
+    .mission-panel p {
+      font-size: 19px;
+      line-height: 2;
+      color: rgba(255, 255, 255, 0.84);
+      margin-bottom: 0;
+      max-width: 1020px;
+    }
+
+    .service-card {
+      padding: 40px;
+      height: 100%;
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.08);
+    }
+
+    .service-badge {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--dalfay-green-dark);
+      margin-bottom: 14px;
+    }
+
+    .service-card h3 {
+      font-size: 34px;
+      line-height: 1.16;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 18px;
+    }
+
+    .service-card p {
+      font-size: 18px;
+      line-height: 1.95;
+      color: var(--dalfay-muted);
+      margin-bottom: 24px;
+    }
+
+    .service-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 30px 0;
+    }
+
+    .service-list li {
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 16px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--dalfay-text);
+    }
+
+    .service-list li::before {
+      content: "\f26e";
+      font-family: bootstrap-icons;
+      position: absolute;
+      left: 0;
+      top: 1px;
+      color: var(--dalfay-green);
+      font-size: 18px;
+    }
+
+    .service-actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .btn-service,
+    .btn-service-light {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 13px 22px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      text-decoration: none;
+      transition: all .25s ease;
+    }
+
+    .btn-service {
+      background: var(--dalfay-black);
+      color: #fff;
+      border: 2px solid var(--dalfay-black);
+    }
+
+    .btn-service:hover {
+      background: #000;
+      border-color: #000;
+      color: #fff;
+    }
+
+    .btn-service-light {
+      background: transparent;
+      color: var(--dalfay-black);
+      border: 2px solid rgba(0, 0, 0, 0.10);
+    }
+
+    .btn-service-light:hover {
+      color: var(--dalfay-green-dark);
+      border-color: var(--dalfay-green-dark);
+      background: var(--dalfay-green-soft);
+    }
+
+    .process-section {
+      background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+    }
+
+    .process-step {
+      padding: 36px;
+      height: 100%;
+    }
+
+    .process-step .number {
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      background: var(--dalfay-green);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 23px;
+      font-weight: 900;
+      margin-bottom: 20px;
+    }
+
+    .process-step h3 {
+      font-size: 28px;
+      line-height: 1.15;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 15px;
+    }
+
+    .process-step p {
+      font-size: 17px;
+      line-height: 1.95;
+      color: var(--dalfay-muted);
+      margin: 0;
+    }
+
+    .backbone-box {
+      padding: 54px;
+    }
+
+    .backbone-box h3 {
+      font-size: clamp(32px, 4vw, 52px);
+      line-height: 1.1;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 18px;
+      max-width: 980px;
+    }
+
+    .backbone-box p {
+      font-size: 19px;
+      line-height: 2;
+      color: var(--dalfay-muted);
+      margin: 0;
+      max-width: 1040px;
+    }
+
+    .coverage-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    .coverage-box {
+      padding: 34px;
+      height: 100%;
+    }
+
+    .coverage-box h4 {
+      font-size: 26px;
+      line-height: 1.15;
+      font-weight: 900;
+      color: var(--dalfay-black);
+      margin-bottom: 14px;
+    }
+
+    .coverage-box p {
+      font-size: 17px;
+      line-height: 1.95;
+      color: var(--dalfay-muted);
+      margin: 0;
+    }
+
+    .footer {
+      background: var(--dalfay-footer);
+      color: #ffffff;
+      padding-top: 0;
+    }
+
+    .footer-cta {
+      background: #0c1b27;
+      padding: 70px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .footer-cta h3 {
+      font-size: clamp(34px, 4vw, 58px);
+      line-height: 1.08;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 16px;
+      max-width: 780px;
+    }
+
+    .footer-cta p {
+      font-size: 19px;
+      line-height: 1.95;
+      color: rgba(255, 255, 255, 0.86);
+      margin: 0;
+      max-width: 780px;
+    }
+
+    .footer-top {
+      padding-top: 82px;
+      padding-bottom: 42px;
+    }
+
+    .footer .sitename,
+    .footer h4,
+    .footer strong,
+    .footer p,
+    .footer span,
+    .footer a,
+    .footer li {
+      color: #ffffff !important;
+    }
+
+    .footer a:hover {
+      color: var(--dalfay-green) !important;
+    }
+
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .footer-links ul li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links ul i {
+      color: var(--dalfay-green);
+      margin-right: 6px;
+    }
+
+    .copyright {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 22px;
+      padding-bottom: 28px;
+    }
+
+    .scroll-top {
+      background: var(--dalfay-green);
+      color: #fff;
+    }
+
+    .scroll-top:hover {
+      background: var(--dalfay-green-dark);
+      color: #fff;
+    }
+
+    @media (max-width: 991.98px) {
+      .branding {
+        min-height: 88px;
+      }
+
+      .logo img {
+        height: 58px;
+        max-height: 58px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 130px 0 110px;
+      }
+
+      .hero-actions {
+        margin-bottom: 70px;
+      }
+
+      .hero-stats,
+      .coverage-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .section {
+        padding: 110px 0;
+      }
+
+      .story-card,
+      .service-card,
+      .backbone-box,
+      .coverage-box,
+      .process-step,
+      .mission-panel {
+        padding: 30px;
+      }
+    }
+
+    @media (max-width: 575.98px) {
+      .logo img {
+        height: 50px;
+        max-height: 50px;
+      }
+
+      .hero h1 {
+        letter-spacing: -0.8px;
+      }
+
+      .section-title {
+        margin-bottom: 52px;
+      }
+
+      .hero-actions {
+        margin-bottom: 56px;
+      }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-between">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo.jpg" alt="Dalfay Logo">
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#process">How It Works</a></li>
+            <li><a href="#coverage">Coverage</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+
+    <section id="hero" class="hero section">
+      <div class="container" data-aos="fade-up">
+        <span class="hero-eyebrow">Global Vehicle Access</span>
+
+        <h1>
+          A powerful vehicle sourcing and brokerage company built to <span class="accent">move cars across borders and across markets.</span>
+        </h1>
+
+        <p class="hero-lead">
+          Dalfay helps overseas businesses import vehicles from the United States, helps individuals send cars to their loved ones abroad, and helps customers in the U.S. buy vehicles through a guided brokerage process.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#services" class="btn-main">Explore Services</a>
+          <a href="#story" class="btn-outline-main">Read Our Story</a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <h3>$10M+</h3>
+            <p>In sales achieved through a real operating business built on trust, execution, and long-term relationships.</p>
+          </div>
+          <div class="hero-stat">
+            <h3>3 Service Lines</h3>
+            <p>Three distinct ways Dalfay serves businesses, families, and buyers who need access to better vehicles.</p>
+          </div>
+          <div class="hero-stat">
+            <h3>Custom Model</h3>
+            <p>Every case is quoted individually based on destination, sourcing needs, logistics, and the level of support required.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="story" class="section light-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Our Story</h2>
+          <p>From a small business vision to a company serving customers around the world.</p>
+        </div>
+
+        <div class="row gy-5 align-items-stretch">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="story-card h-100">
+              <h3>Why Dalfay was founded</h3>
+              <p>
+                Dalfay was founded in 2018 with a simple but powerful idea: make better vehicles more accessible to more people. In many parts of the world, businesses and families depend on imported vehicles because local manufacturing is limited or unavailable. We saw the need for a company that could do more than list cars. We built a company that could advise, source, coordinate, and execute.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="story-card h-100">
+              <h3>What makes us different</h3>
+              <p>
+                Dalfay is not a generic shipping website and not just a marketplace. We are a consultation-first vehicle access company. We learn what the customer actually needs, source the right vehicle when needed, coordinate transportation, manage export-related steps, and provide flexible options through delivery, pickup, or destination clearing support.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mission-panel" data-aos="fade-up" data-aos-delay="300">
+          <h3>We built Dalfay to connect people, businesses, and markets through better vehicle access.</h3>
+          <p>
+            We believe good vehicles should not be wasted. We believe entrepreneurs, repair businesses, dealerships, and families should have better access to U.S. vehicles. We believe a serious company should combine operational strength with real flexibility. That is the model behind Dalfay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Services</h2>
+          <p>Three clear service lines. One serious company behind them.</p>
+        </div>
+
+        <div class="row gy-5">
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card">
+              <span class="service-badge">Service 01</span>
+              <h3>Import Solutions for Overseas Businesses</h3>
+              <p>
+                We help dealerships, mechanic shops, repair businesses, and rental operators import vehicles from the United States through a custom, per-car consulting model.
+              </p>
+              <ul class="service-list">
+                <li>Representative assigned after consultation request</li>
+                <li>Business-focused discovery and needs analysis</li>
+                <li>Vehicle sourcing from auctions, private parties, or dealerships</li>
+                <li>Domestic transport coordination inside the U.S.</li>
+                <li>Export documents and shipment support</li>
+                <li>Optional insurance coordination</li>
+                <li>Flexible port clearing approach based on customer preference</li>
+              </ul>
+              <div class="service-actions">
+                <a href="b2b-imports.html" class="btn-service">Open Service Page</a>
+                <a href="b2b-imports.html#consultation" class="btn-service-light">Request Consultation</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card">
+              <span class="service-badge">Service 02</span>
+              <h3>Personal Export Solutions</h3>
+              <p>
+                We help individuals in the United States export vehicles to family and loved ones abroad, whether they already own the car or need help sourcing one first.
+              </p>
+              <ul class="service-list">
+                <li>Export a vehicle already owned in the U.S.</li>
+                <li>Help source a vehicle when needed</li>
+                <li>Guidance on local regulations and destination considerations</li>
+                <li>Transport, export, and shipment coordination</li>
+                <li>Flexible clearing options at destination</li>
+                <li>High-touch one-on-one support</li>
+              </ul>
+              <div class="service-actions">
+                <a href="personal-export.html" class="btn-service">Open Service Page</a>
+                <a href="personal-export.html#consultation" class="btn-service-light">Request Consultation</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card">
+              <span class="service-badge">Service 03</span>
+              <h3>U.S. Vehicle Brokerage</h3>
+              <p>
+                We act as a sourcing and brokerage partner for buyers in the United States, including individuals, small rental agencies, and small dealerships.
+              </p>
+              <ul class="service-list">
+                <li>Guided vehicle buying from auctions, dealers, shops, or private parties</li>
+                <li>Ideal for customers unfamiliar with the auction process</li>
+                <li>Consulting-first model for better purchase decisions</li>
+                <li>Door-to-door delivery available</li>
+                <li>Pickup available near Santa Clara, California when applicable</li>
+                <li>Works for both businesses and personal buyers in the U.S.</li>
+              </ul>
+              <div class="service-actions">
+                <a href="us-brokerage.html" class="btn-service">Open Service Page</a>
+                <a href="us-brokerage.html#consultation" class="btn-service-light">Request Consultation</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="section process-section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>How It Works</h2>
+          <p>Every relationship starts with consultation and ends with a tailored solution.</p>
+        </div>
+
+        <div class="row gy-5">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-step">
+              <div class="number">1</div>
+              <h3>Consultation</h3>
+              <p>
+                Customers begin by submitting a consultation request so we can understand goals, location, vehicle type, and the level of support needed.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-step">
+              <div class="number">2</div>
+              <h3>Custom Quote</h3>
+              <p>
+                We do not publish generic pricing. Every case is quoted based on sourcing method, route, destination, and complexity.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-step">
+              <div class="number">3</div>
+              <h3>Execution</h3>
+              <p>
+                We source or receive the vehicle, arrange transportation, handle export-related steps, and coordinate the process according to the customer’s case.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="process-step">
+              <div class="number">4</div>
+              <h3>Flexible Completion</h3>
+              <p>
+                Customers may self-clear, work with a referred clearing agent, receive door-to-door delivery, or pick up locally when available.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="backbone" class="section light-section">
+      <div class="container">
+        <div class="backbone-box" data-aos="fade-up">
+          <h3>Auction Warriors is the sourcing backbone behind our vehicle access model.</h3>
+          <p>
+            Across all three service lines, Dalfay leverages Auction Warriors as a core sourcing channel by default. That gives our customers stronger inventory access while keeping the relationship, strategy, consulting, and overall experience centered on Dalfay.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="coverage" class="section">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Coverage</h2>
+          <p>We support customers across Africa, Europe, Central Asia, and the Middle East.</p>
+        </div>
+
+        <div class="coverage-grid" data-aos="fade-up" data-aos-delay="100">
+          <div class="coverage-box">
+            <h4>Africa</h4>
+            <p>
+              Nigeria, Kenya, and Cameroon are among the African markets we currently support for export and import solutions.
+            </p>
+          </div>
+
+          <div class="coverage-box">
+            <h4>Europe & Caucasus</h4>
+            <p>
+              Bulgaria, Lithuania, Germany, Poland, Georgia, Ukraine, and the Netherlands are part of our supported footprint.
+            </p>
+          </div>
+
+          <div class="coverage-box">
+            <h4>Middle East & Central Asia</h4>
+            <p>
+              United Arab Emirates, Jordan, Oman, Kyrgyzstan, Kazakhstan, Tajikistan, and Uzbekistan are among the regions where we support customer vehicle needs.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="footer" class="footer">
+
+    <div class="footer-cta">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <div class="col-lg-8">
+            <h3>Start with a consultation and build the right vehicle solution from there.</h3>
+            <p>
+              Dalfay is built for customers who want a serious partner, not a generic website. Explore the service line that fits your needs and move forward with confidence.
+            </p>
+          </div>
+          <div class="col-lg-4 d-flex justify-content-lg-end">
+            <div class="d-flex flex-wrap gap-2">
+              <a href="b2b-imports.html" class="btn-main">B2B Imports</a>
+              <a href="personal-export.html" class="btn-outline-main" style="color:#fff;border-color:rgba(255,255,255,0.18);">Personal Export</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+
+        <div class="col-lg-5 col-md-12 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <img src="assets/img/logo.jpg" alt="Dalfay Logo">
+          </a>
+          <div class="footer-contact pt-4">
+            <p>3275 Stevens Creek Blvd, Suite 350</p>
+            <p>San Jose, CA 95117</p>
+            <p class="mt-3"><strong>Email:</strong> <span>info@dalfay.com</span></p>
+            <p><strong>Sales:</strong> <span>sales@dalfay.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Navigate</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#story">Our Story</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#coverage">Coverage</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Core Services</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="b2b-imports.html">Import Solutions for Overseas Businesses</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="personal-export.html">Personal Export Solutions</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="us-brokerage.html">U.S. Vehicle Brokerage</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center">
+      <p>© <span>Copyright</span> <strong class="px-1">Dalfay</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Designed using <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
+    <i class="bi bi-arrow-up-short"></i>
+  </a>
+
+  <div id="preloader">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
