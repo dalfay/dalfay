@@ -26,13 +26,12 @@
    * Mobile nav toggle
    */
   const mobileNavToggleBtn = document.querySelector('.mobile-nav-toggle');
-  const mobileNavToogle = window.__dalfayMobileNavToggle || function() {
+  function mobileNavToogle() {
     document.querySelector('body').classList.toggle('mobile-nav-active');
     mobileNavToggleBtn.classList.toggle('bi-list');
     mobileNavToggleBtn.classList.toggle('bi-x');
-  };
-
-  if (mobileNavToggleBtn && !window.__dalfayMobileNavBound) {
+  }
+  if (mobileNavToggleBtn) {
     mobileNavToggleBtn.addEventListener('click', mobileNavToogle);
 
     /**

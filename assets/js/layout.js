@@ -218,37 +218,6 @@
   </footer>`;
   }
 
-  function bindMobileNav() {
-    const body = document.body;
-    const navmenu = document.querySelector("#navmenu");
-    const mobileNavToggleBtn = document.querySelector(".mobile-nav-toggle");
-    const navmenuList = navmenu ? navmenu.querySelector("ul") : null;
-
-    if (!body || !navmenu || !mobileNavToggleBtn || !navmenuList) {
-      return;
-    }
-
-    function mobileNavToggle() {
-      const isActive = body.classList.toggle("mobile-nav-active");
-      navmenu.classList.toggle("navmenu-open", isActive);
-      navmenuList.style.display = isActive ? "flex" : "";
-      mobileNavToggleBtn.classList.toggle("bi-list");
-      mobileNavToggleBtn.classList.toggle("bi-x");
-    }
-
-    mobileNavToggleBtn.addEventListener("click", mobileNavToggle);
-    document.querySelectorAll("#navmenu a").forEach((link) => {
-      link.addEventListener("click", () => {
-        if (body.classList.contains("mobile-nav-active")) {
-          mobileNavToggle();
-        }
-      });
-    });
-
-    window.__dalfayMobileNavBound = true;
-    window.__dalfayMobileNavToggle = mobileNavToggle;
-  }
-
   const pageKey = document.body.dataset.page;
   const config = pages[pageKey];
 
@@ -266,6 +235,4 @@
   if (footerMount) {
     footerMount.outerHTML = renderFooter(config);
   }
-
-  bindMobileNav();
 })();
