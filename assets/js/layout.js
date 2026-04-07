@@ -152,14 +152,36 @@
           <img src="/assets/img/logo.jpg" alt="Dalfay Logo">
         </a>
 
-        <nav id="navmenu" class="navmenu">
+        <nav id="navmenu" class="navmenu d-none d-xl-block">
           <ul>
             ${renderNavItems(config.headerNav)}
           </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
         </nav>
+
+        <button type="button" class="mobile-menu-toggle d-xl-none" aria-expanded="false" aria-controls="mobile-menu-overlay" aria-label="Open menu">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
     </div>
+
+    <div id="mobile-menu-overlay" class="mobile-menu-overlay d-xl-none" aria-hidden="true">
+      <div class="mobile-menu-panel">
+        <div class="mobile-menu-header">
+          <a href="/" class="logo">
+            <img src="/assets/img/logo.jpg" alt="Dalfay Logo">
+          </a>
+          <button type="button" class="mobile-menu-close" aria-label="Close menu">
+            <i class="bi bi-x"></i>
+          </button>
+        </div>
+
+        <nav class="mobile-menu-nav" aria-label="Mobile Navigation">
+          <ul>
+            ${renderNavItems(config.headerNav)}
+          </ul>
+        </nav>
+      </div>
+    </div> 
   </header>`;
   }
 
@@ -234,5 +256,35 @@
 
   if (footerMount) {
     footerMount.outerHTML = renderFooter(config);
+  }
+
+  const body = document.body;
+  const mobileMenuToggle = document.querySelector(".mobile-menu-toggle");
+  const mobileMenuClose = document.querySelector(".mobile-menu-close");
+  const mobileMenuOverlay = document.querySelector("#mobile-menu-overlay");
+
+  if (body && mobileMenuToggle && mobileMenuClose && mobileMenuOverlay) {
+    const setMobileMenuState = (isOpen) => {
+      body.classList.toggle("mobile-menu-open", isOpen);
+      mobileMenuOverlay.classList.toggle("is-open", isOpen);
+      mobileMenuOverlay.setAttribute("aria-hidden", isOpen ? "false" : "true");
+      mobileMenuToggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+    };
+
+    mobileMenuToggle.addEventListener("click", () => setMobileMenuState(true));
+    mobileMenuClose.addEventListener("click", () => setMobileMenuState(false));
+    mobileMenuOverlay.addEventListener("click", (event) => {
+      if (event.target === mobileMenuOverlay) {
+        setMobileMenuState(false);
+      }
+    });
+    document.querySelectorAll(".mobile-menu-nav a").forEach((link) => {
+      link.addEventListener("click", () => setMobileMenuState(false));
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && body.classList.contains("mobile-menu-open")) {
+        setMobileMenuState(false);
+      }
+    });
   }
 })();
