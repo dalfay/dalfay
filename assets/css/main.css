@@ -1965,9 +1965,10 @@ section,
 :root {
   --dalfay-header-height: 140px;
   --dalfay-header-height-tablet: 118px;
+  --dalfay-header-height-mobile: 110px;
   --dalfay-logo-height: 120px;
   --dalfay-logo-height-tablet: 92px;
-  --dalfay-logo-height-mobile: 72px;
+  --dalfay-logo-height-mobile: 96px;
   --nav-hover-color: var(--dalfay-green-dark, #2f7f37);
   --nav-dropdown-hover-color: var(--dalfay-green-dark, #2f7f37);
 }
@@ -2030,6 +2031,10 @@ section,
 }
 
 @media (max-width: 575.98px) {
+  .header .branding {
+    min-height: var(--dalfay-header-height-mobile);
+  }
+
   .header .logo img {
     height: var(--dalfay-logo-height-mobile);
     max-height: var(--dalfay-logo-height-mobile);
