@@ -2040,3 +2040,61 @@ section,
     max-height: var(--dalfay-logo-height-mobile);
   }
 }
+
+@media (max-width: 1199px) {
+  .header .mobile-nav-toggle {
+    color: var(--dalfay-black, #111111);
+    margin-right: 0;
+    z-index: 10000;
+  }
+
+  .header .navmenu ul {
+    display: none;
+  }
+
+  .mobile-nav-active .header .mobile-nav-toggle {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    color: var(--dalfay-green-dark, #2f7f37);
+  }
+
+  .mobile-nav-active .header .navmenu {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    background: #ffffff;
+  }
+
+  .mobile-nav-active .header .navmenu > ul {
+    display: flex;
+    position: static;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+    padding: 96px 28px 48px;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+    background: #ffffff;
+  }
+
+  .mobile-nav-active .header .navmenu a,
+  .mobile-nav-active .header .navmenu a:focus {
+    justify-content: center;
+    padding: 16px 12px;
+    color: var(--dalfay-black, #111111);
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+  }
+
+  .mobile-nav-active .header .navmenu a:hover,
+  .mobile-nav-active .header .navmenu li:hover > a,
+  .mobile-nav-active .header .navmenu .active,
+  .mobile-nav-active .header .navmenu .active:focus {
+    color: var(--dalfay-green-dark, #2f7f37);
+  }
+}
