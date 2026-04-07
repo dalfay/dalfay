@@ -2052,6 +2052,11 @@ section,
     display: none;
   }
 
+  .header .navmenu li {
+    width: 100%;
+    list-style: none;
+  }
+
   .mobile-nav-active .header .mobile-nav-toggle {
     position: fixed;
     top: 24px;
@@ -2119,10 +2124,12 @@ section,
     background: #ffffff;
     opacity: 1;
     visibility: visible;
+    overflow: visible;
   }
 
   .mobile-nav-active .header .navmenu a,
   .mobile-nav-active .header .navmenu a:focus {
+    display: flex;
     justify-content: center;
     width: 100%;
     max-width: 420px;
@@ -2131,6 +2138,12 @@ section,
     font-size: 20px;
     font-weight: 800;
     text-align: center;
+  }
+
+  .mobile-nav-active .header .navmenu li {
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
   .mobile-nav-active .header .navmenu a:hover,
