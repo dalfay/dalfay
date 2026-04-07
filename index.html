@@ -583,6 +583,112 @@
         margin-bottom: 56px;
       }
     }
+
+    @media (max-width: 1199.98px) {
+      body.mobile-nav-active {
+        overflow: hidden;
+      }
+
+      body.mobile-nav-active .header {
+        position: fixed;
+        inset: 0;
+        z-index: 10000;
+        width: 100vw;
+        height: 100dvh;
+        background: #ffffff;
+        backdrop-filter: none;
+        box-shadow: none;
+        border-bottom: 0;
+      }
+
+      body.mobile-nav-active .header .branding {
+        min-height: 100dvh;
+        padding: 0;
+      }
+
+      body.mobile-nav-active .header .branding > .container {
+        display: block !important;
+        width: 100%;
+        max-width: none;
+        min-height: 100dvh;
+        padding: 0;
+      }
+
+      body.mobile-nav-active .header .logo {
+        position: fixed;
+        top: 18px;
+        left: 20px;
+        z-index: 10002;
+      }
+
+      body.mobile-nav-active .header .mobile-nav-toggle {
+        position: fixed;
+        top: 24px;
+        right: 20px;
+        z-index: 10003;
+        color: var(--dalfay-green-dark);
+      }
+
+      body.mobile-nav-active .header .navmenu {
+        position: fixed;
+        inset: 0;
+        display: block;
+        z-index: 10001;
+        width: 100vw;
+        height: 100dvh;
+        background: #ffffff;
+      }
+
+      body.mobile-nav-active .header .navmenu > ul {
+        display: flex !important;
+        position: fixed;
+        inset: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 100vw;
+        height: 100dvh;
+        margin: 0;
+        padding: 96px 28px 48px;
+        list-style: none;
+        background: #ffffff;
+        border-radius: 0;
+        box-shadow: none;
+        overflow: auto;
+      }
+
+      body.mobile-nav-active .header .navmenu li {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+      }
+
+      body.mobile-nav-active .header .navmenu a,
+      body.mobile-nav-active .header .navmenu a:focus,
+      body.mobile-nav-active .header .navmenu li:hover > a,
+      body.mobile-nav-active .header .navmenu .active,
+      body.mobile-nav-active .header .navmenu .active:focus {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 420px;
+        padding: 16px 12px;
+        color: var(--dalfay-black);
+        font-size: 20px;
+        font-weight: 800;
+        text-align: center;
+        white-space: normal;
+        background: transparent;
+      }
+
+      body.mobile-nav-active main,
+      body.mobile-nav-active footer,
+      body.mobile-nav-active .scroll-top {
+        visibility: hidden;
+      }
+    }
   </style>
 </head>
 
