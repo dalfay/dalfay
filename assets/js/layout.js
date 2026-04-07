@@ -41,11 +41,11 @@
     },
     b2b: {
       headerNav: [
-        { href: "/", label: "Home" },
-        { href: "#overview", label: "B2B Imports", active: true },
-        { href: "#process", label: "How It Works" },
-        { href: "#coverage", label: "Coverage" },
-        { href: "#consultation", label: "Consultation" }
+        { href: "/#hero", label: "Home" },
+        { href: "/#story", label: "Our Story" },
+        { href: "/#services", label: "Services", active: true },
+        { href: "/#process", label: "How It Works" },
+        { href: "/#coverage", label: "Coverage" }
       ],
       footerCta: {
         title: "Build a dependable import relationship with Dalfay.",
@@ -71,11 +71,11 @@
     },
     personal: {
       headerNav: [
-        { href: "/", label: "Home" },
-        { href: "#overview", label: "Personal Export", active: true },
-        { href: "#process", label: "How It Works" },
-        { href: "#coverage", label: "Coverage" },
-        { href: "#consultation", label: "Consultation" }
+        { href: "/#hero", label: "Home" },
+        { href: "/#story", label: "Our Story" },
+        { href: "/#services", label: "Services", active: true },
+        { href: "/#process", label: "How It Works" },
+        { href: "/#coverage", label: "Coverage" }
       ],
       footerCta: {
         title: "Start with a consultation and export the vehicle the right way.",
@@ -101,10 +101,11 @@
     },
     us: {
       headerNav: [
-        { href: "/", label: "Home" },
-        { href: "#overview", label: "U.S. Brokerage", active: true },
-        { href: "#process", label: "How It Works" },
-        { href: "#delivery-options", label: "Delivery Options" }
+        { href: "/#hero", label: "Home" },
+        { href: "/#story", label: "Our Story" },
+        { href: "/#services", label: "Services", active: true },
+        { href: "/#process", label: "How It Works" },
+        { href: "/#coverage", label: "Coverage" }
       ],
       footerCta: {
         title: "Start with a consultation and buy with a clearer plan.",
