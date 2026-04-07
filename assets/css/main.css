@@ -1958,3 +1958,80 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+/*--------------------------------------------------------------
+# Shared Dalfay Header
+--------------------------------------------------------------*/
+:root {
+  --dalfay-header-height: 112px;
+  --dalfay-header-height-tablet: 96px;
+  --dalfay-logo-height: 92px;
+  --dalfay-logo-height-tablet: 72px;
+  --dalfay-logo-height-mobile: 60px;
+  --nav-hover-color: var(--dalfay-green-dark, #2f7f37);
+  --nav-dropdown-hover-color: var(--dalfay-green-dark, #2f7f37);
+}
+
+.header {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.03);
+}
+
+.header .branding {
+  min-height: var(--dalfay-header-height);
+  background-color: transparent;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  line-height: 1;
+}
+
+.header .logo img {
+  width: auto;
+  height: var(--dalfay-logo-height);
+  max-height: var(--dalfay-logo-height);
+  display: block;
+  object-fit: contain;
+  margin-right: 8px;
+}
+
+.header .navmenu a,
+.header .navmenu a:focus {
+  color: var(--dalfay-black, #111111);
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+}
+
+.header .navmenu a:hover,
+.header .navmenu li:hover > a,
+.header .navmenu .dropdown ul a:hover,
+.header .navmenu .dropdown ul .active:hover,
+.header .navmenu .dropdown ul li:hover > a,
+.header .navmenu .active,
+.header .navmenu .active:focus {
+  color: var(--dalfay-green-dark, #2f7f37);
+}
+
+@media (max-width: 991.98px) {
+  .header .branding {
+    min-height: var(--dalfay-header-height-tablet);
+  }
+
+  .header .logo img {
+    height: var(--dalfay-logo-height-tablet);
+    max-height: var(--dalfay-logo-height-tablet);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .header .logo img {
+    height: var(--dalfay-logo-height-mobile);
+    max-height: var(--dalfay-logo-height-mobile);
+  }
+}
