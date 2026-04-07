@@ -587,28 +587,9 @@
   </style>
 </head>
 
-<body class="index-page">
+<body class="index-page" data-page="home">
 
-  <header id="header" class="header">
-    <div class="branding d-flex align-items-center">
-      <div class="container position-relative d-flex align-items-center justify-content-between">
-        <a href="index.html" class="logo">
-          <img src="assets/img/logo.jpg" alt="Dalfay Logo">
-        </a>
-
-        <nav id="navmenu" class="navmenu">
-          <ul>
-            <li><a href="#hero" class="active">Home</a></li>
-            <li><a href="#story">Our Story</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#process">How It Works</a></li>
-            <li><a href="#coverage">Coverage</a></li>
-          </ul>
-          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-        </nav>
-      </div>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main class="main">
 
@@ -705,8 +686,8 @@
                 <li>Dedicated business consultant</li>
               </ul>
               <div class="service-actions">
-                <a href="b2b-imports.html" class="btn-service">Read More</a>
-                <a href="b2b-imports.html#consultation" class="btn-service-light">Request Free Consultation</a>
+                <a href="/b2b-imports/" class="btn-service">Read More</a>
+                <a href="/b2b-imports/#consultation" class="btn-service-light">Request Free Consultation</a>
               </div>
             </div>
           </div>
@@ -728,8 +709,8 @@
                 <li>Dedicated dispatcher per order</li>
               </ul>
               <div class="service-actions">
-                <a href="personal-export.html" class="btn-service">Read More</a>
-                <a href="personal-export.html#consultation" class="btn-service-light">Request Free Consultation</a>
+                <a href="/personal-exports/" class="btn-service">Read More</a>
+                <a href="/personal-exports/#consultation" class="btn-service-light">Request Free Consultation</a>
               </div>
             </div>
           </div>
@@ -747,8 +728,8 @@
                 <li>Dedicated dispatcher per order</li>
               </ul>
               <div class="service-actions">
-                <a href="us-brokerage.html" class="btn-service">Read More</a>
-                <a href="us-brokerage.html#consultation" class="btn-service-light">Request Free Consultation</a>
+                <a href="/us-brokerage/" class="btn-service">Read More</a>
+                <a href="/us-brokerage/#consultation" class="btn-service-light">Request Free Consultation</a>
               </div>
             </div>
           </div>
@@ -854,72 +835,7 @@
 
   </main>
 
-  <footer id="footer" class="footer">
-
-    <div class="footer-cta">
-      <div class="container">
-        <div class="row align-items-center gy-4">
-          <div class="col-lg-8">
-            <h3>Start with a consultation and build the right vehicle solution from there.</h3>
-            <p>
-              Dalfay is built for customers who want a serious partner, not a generic website. Explore the service line that fits your needs and move forward with confidence.
-            </p>
-          </div>
-          <div class="col-lg-4 d-flex justify-content-lg-end">
-            <div class="d-flex flex-wrap gap-2">
-              <a href="b2b-imports.html" class="btn-main">B2B Imports</a>
-              <a href="personal-export.html" class="btn-outline-main" style="color:#fff;border-color:rgba(255,255,255,0.18);">Personal Export</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="container footer-top">
-      <div class="row gy-4">
-
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <img src="assets/img/logo.jpg" alt="Dalfay Logo">
-          </a>
-          <div class="footer-contact pt-4">
-            <p>3275 Stevens Creek Blvd, Suite 350</p>
-            <p>San Jose, CA 95117</p>
-            <p class="mt-3"><strong>Email:</strong> <span>info@dalfay.com</span></p>
-            <p><strong>Sales:</strong> <span>sales@dalfay.com</span></p>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 footer-links">
-          <h4>Navigate</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#hero">Home</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#story">Our Story</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#services">Services</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#coverage">Coverage</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4 col-md-6 footer-links">
-          <h4>Core Services</h4>
-          <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="b2b-imports.html">Import Solutions for Overseas Businesses</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="personal-export.html">Personal Export Solutions</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="us-brokerage.html">U.S. Vehicle Brokerage</a></li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="container copyright text-center">
-      <p>© <span>Copyright</span> <strong class="px-1">Dalfay</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        Designed using <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
-
-  </footer>
+  <div id="site-footer"></div>
 
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center">
     <i class="bi bi-arrow-up-short"></i>
@@ -942,6 +858,7 @@
   <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 
+  <script src="assets/js/layout.js"></script>
   <script src="assets/js/main.js"></script>
 
 </body>
