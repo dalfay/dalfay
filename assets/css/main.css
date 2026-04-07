@@ -2096,28 +2096,36 @@ section,
     z-index: 9999;
     width: 100vw;
     height: 100dvh;
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
     overflow-y: auto;
     background: #ffffff;
   }
 
   .mobile-nav-active .header .navmenu > ul {
-    display: flex;
+    display: flex !important;
     position: static;
     width: 100%;
     min-height: 100dvh;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 8px;
     padding: 96px 28px 48px;
     margin: 0;
     border-radius: 0;
     box-shadow: none;
     background: #ffffff;
+    opacity: 1;
+    visibility: visible;
   }
 
   .mobile-nav-active .header .navmenu a,
   .mobile-nav-active .header .navmenu a:focus {
     justify-content: center;
+    width: 100%;
+    max-width: 420px;
     padding: 16px 12px;
     color: var(--dalfay-black, #111111);
     font-size: 20px;
