@@ -2151,4 +2151,10 @@ section,
 }
 
 @media (max-width: 1199.98px) {
+  .mobile-nav-active .header {
+    backdrop-filter: none;
+    background: transparent;
+    box-shadow: none;
+    overflow: visible;
+  }
 }
