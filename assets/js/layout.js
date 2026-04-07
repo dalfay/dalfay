@@ -163,26 +163,29 @@
         </button>
       </div>
     </div>
-
-    <div id="mobile-menu-overlay" class="mobile-menu-overlay d-xl-none" aria-hidden="true">
-      <div class="mobile-menu-panel">
-        <div class="mobile-menu-header">
-          <a href="/" class="logo">
-            <img src="/assets/img/logo.jpg" alt="Dalfay Logo">
-          </a>
-          <button type="button" class="mobile-menu-close" aria-label="Close menu">
-            <i class="bi bi-x"></i>
-          </button>
-        </div>
-
-        <nav class="mobile-menu-nav" aria-label="Mobile Navigation">
-          <ul>
-            ${renderNavItems(config.headerNav)}
-          </ul>
-        </nav>
-      </div>
-    </div> 
   </header>`;
+  }
+
+  function renderMobileMenu(config) {
+    return `
+  <div id="mobile-menu-overlay" class="mobile-menu-overlay d-xl-none" aria-hidden="true">
+    <div class="mobile-menu-panel">
+      <div class="mobile-menu-header">
+        <a href="/" class="logo">
+          <img src="/assets/img/logo.jpg" alt="Dalfay Logo">
+        </a>
+        <button type="button" class="mobile-menu-close" aria-label="Close menu">
+          <i class="bi bi-x"></i>
+        </button>
+      </div>
+
+      <nav class="mobile-menu-nav" aria-label="Mobile Navigation">
+        <ul>
+          ${renderNavItems(config.headerNav)}
+        </ul>
+      </nav>
+    </div>
+  </div>`;
   }
 
   function renderFooter(config) {
@@ -253,6 +256,8 @@
   if (headerMount) {
     headerMount.outerHTML = renderHeader(config);
   }
+
+  document.body.insertAdjacentHTML("afterbegin", renderMobileMenu(config));
 
   if (footerMount) {
     footerMount.outerHTML = renderFooter(config);
