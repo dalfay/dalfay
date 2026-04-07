@@ -1963,11 +1963,11 @@ section,
 # Shared Dalfay Header
 --------------------------------------------------------------*/
 :root {
-  --dalfay-header-height: 112px;
-  --dalfay-header-height-tablet: 96px;
-  --dalfay-logo-height: 92px;
-  --dalfay-logo-height-tablet: 72px;
-  --dalfay-logo-height-mobile: 60px;
+  --dalfay-header-height: 140px;
+  --dalfay-header-height-tablet: 118px;
+  --dalfay-logo-height: 120px;
+  --dalfay-logo-height-tablet: 92px;
+  --dalfay-logo-height-mobile: 72px;
   --nav-hover-color: var(--dalfay-green-dark, #2f7f37);
   --nav-dropdown-hover-color: var(--dalfay-green-dark, #2f7f37);
 }
