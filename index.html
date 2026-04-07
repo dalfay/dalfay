@@ -412,6 +412,22 @@
       max-width: 980px;
     }
 
+    .backbone-title-link,
+    .backbone-title-link:hover,
+    .backbone-title-link:focus,
+    .backbone-title-link:active,
+    .backbone-title-link:visited {
+      color: inherit;
+      text-decoration: none;
+      transition: none;
+      animation: none;
+    }
+
+    .backbone-title-link:focus {
+      outline: none;
+      box-shadow: none;
+    }
+
     .backbone-box p {
       font-size: 19px;
       line-height: 2;
@@ -793,10 +809,13 @@
     <section id="backbone" class="section light-section">
       <div class="container">
         <div class="backbone-box" data-aos="fade-up">
-          <h3>Auction Warriors is the sourcing backbone behind our vehicle access model.</h3>
+          <h3><a href="https://auctionwarriors.com" class="backbone-title-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.</h3>
           <p>
-            Across all three service lines, Dalfay leverages Auction Warriors as a core sourcing channel by default. That gives our customers stronger inventory access while keeping the relationship, strategy, consulting, and overall experience centered on Dalfay.
+            Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.
           </p>
+          <div class="service-actions">
+            <a href="https://auctionwarriors.com" class="btn-main" target="_blank" rel="noopener noreferrer">Auction Warriors</a>
+          </div>
         </div>
       </div>
     </section>
@@ -804,7 +823,6 @@
     <section id="coverage" class="section">
       <div class="container">
         <div class="section-title" data-aos="fade-up">
-          <h2>Coverage</h2>
           <p>We support customers across Africa, Europe, Central Asia, and the Middle East.</p>
         </div>
 
