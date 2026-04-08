@@ -9,6 +9,14 @@
     sales: "sales@dalfay.com"
   };
 
+  const sharedFooterCta = {
+    titleHtml: `<a href="https://auctionwarriors.com" class="footer-plain-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.`,
+    text: "Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.",
+    buttons: [
+      { href: "https://auctionwarriors.com", label: "Launch Auction Warriors", className: "btn-launch-external", external: true, icon: "bi-arrow-up-right" }
+    ]
+  };
+
   const pages = {
     home: {
       headerNav: [
@@ -18,13 +26,7 @@
         { href: "#process", label: "How It Works" },
         { href: "#coverage", label: "Coverage" }
       ],
-      footerCta: {
-        titleHtml: `<a href="https://auctionwarriors.com" class="footer-plain-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.`,
-        text: "Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.",
-        buttons: [
-          { href: "https://auctionwarriors.com", label: "Launch Auction Warriors", className: "btn-launch-external", external: true, icon: "bi-arrow-up-right" }
-        ]
-      },
+      footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
       footerNav: [
         { href: "#hero", label: "Home" },
@@ -48,14 +50,7 @@
         { href: "/#process", label: "How It Works" },
         { href: "/#coverage", label: "Coverage" }
       ],
-      footerCta: {
-        title: "Build a dependable import relationship with Dalfay.",
-        text: "If your business needs a serious U.S. sourcing and export partner, start with a consultation and let us understand your market properly.",
-        buttons: [
-          { href: "#consultation", label: "Request Consultation", className: "btn-main" },
-          { href: "/", label: "Back to Home", className: "btn-outline-main footer-alt-btn" }
-        ]
-      },
+      footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
       footerNav: [
         { href: "/", label: "Home" },
@@ -78,14 +73,7 @@
         { href: "/#process", label: "How It Works" },
         { href: "/#coverage", label: "Coverage" }
       ],
-      footerCta: {
-        title: "Start with a consultation and export the vehicle the right way.",
-        text: "If you are sending a car to loved ones abroad or still need help finding the right one, start with a direct conversation and build the right plan from there.",
-        buttons: [
-          { href: "#consultation", label: "Request Consultation", className: "btn-main" },
-          { href: "/", label: "Back to Home", className: "btn-outline-main footer-alt-btn" }
-        ]
-      },
+      footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
       footerNav: [
         { href: "/", label: "Home" },
@@ -108,14 +96,7 @@
         { href: "/#process", label: "How It Works" },
         { href: "/#coverage", label: "Coverage" }
       ],
-      footerCta: {
-        title: "Start with a consultation and buy with a clearer plan.",
-        text: "Dalfay helps individuals and small businesses source, secure, and deliver vehicles in the United States through a guided brokerage process.",
-        buttons: [
-          { href: "/#services", label: "Explore Services", className: "btn-main" },
-          { href: "/", label: "Back to Home", className: "btn-outline-main footer-alt-btn" }
-        ]
-      },
+      footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
       footerNav: [
         { href: "/", label: "Home" },
@@ -191,20 +172,6 @@
 
   function renderFooter(config) {
     return `
-  <section class="footer-backbone">
-    <div class="container">
-      <div class="backbone-box">
-        <h3><a href="https://auctionwarriors.com" class="footer-plain-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.</h3>
-        <p>
-          Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.
-        </p>
-        <div class="footer-backbone-actions">
-          <a href="https://auctionwarriors.com" class="btn-main" target="_blank" rel="noopener noreferrer">Auction Warriors</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <footer id="footer" class="footer">
     <div class="footer-cta">
       <div class="container">

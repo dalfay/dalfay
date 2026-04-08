@@ -1957,17 +1957,6 @@ section,
   transform: translateY(-2px);
 }
 
-.footer-alt-btn {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.18);
-}
-
-.footer-alt-btn:hover {
-  color: #fff;
-  border-color: rgba(255, 255, 255, 0.32);
-  background: rgba(255, 255, 255, 0.08);
-}
-
 .btn-launch-external {
   display: inline-flex;
   align-items: center;
@@ -2013,43 +2002,6 @@ section,
 .footer-plain-link:focus {
   outline: none;
   box-shadow: none;
-}
-
-.footer-backbone {
-  background: #ffffff;
-  padding: 150px 0;
-}
-
-.footer-backbone .backbone-box {
-  background: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.08);
-  border-radius: 30px;
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.06);
-  padding: 54px;
-}
-
-.footer-backbone .backbone-box h3 {
-  font-size: clamp(32px, 4vw, 52px);
-  line-height: 1.1;
-  font-weight: 900;
-  color: var(--dalfay-black, #111111);
-  margin-bottom: 18px;
-  max-width: 980px;
-}
-
-.footer-backbone .backbone-box p {
-  font-size: 19px;
-  line-height: 2;
-  color: #676767;
-  margin: 0;
-  max-width: 1040px;
-}
-
-.footer-backbone-actions {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-  margin-top: 24px;
 }
 
 .footer {
@@ -2122,10 +2074,6 @@ section,
 }
 
 @media (max-width: 991.98px) {
-  .footer-backbone .backbone-box {
-    padding: 30px;
-  }
-
   .header .branding {
     min-height: var(--dalfay-header-height-tablet);
   }
