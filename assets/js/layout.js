@@ -4,7 +4,8 @@
   const sharedContact = {
     address1: "3275 Stevens Creek Blvd, Suite 350",
     address2: "San Jose, CA 95117",
-    email: "info@dalfay.com",
+    email: "help@dalfay.com",
+    shipping: "shipping@dalfay.com",
     sales: "sales@dalfay.com"
   };
 
@@ -212,10 +213,11 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <h4>Contact Us</h4>
-          <div class="footer-contact pt-4">
+          <div class="footer-contact">
             <p>${sharedContact.address1}</p>
             <p>${sharedContact.address2}</p>
-            <p class="mt-3"><strong>Email:</strong> <span>${sharedContact.email}</span></p>
+            <p class="mt-3"><strong>Help:</strong> <span>${sharedContact.email}</span></p>
+            <p><strong>Shipping:</strong> <span>${sharedContact.shipping}</span></p>
             <p><strong>Sales:</strong> <span>${sharedContact.sales}</span></p>
           </div>
         </div>
