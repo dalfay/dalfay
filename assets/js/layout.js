@@ -21,10 +21,9 @@
     home: {
       headerNav: [
         { href: "#hero", label: "Home", active: true },
-        { href: "#story", label: "Our Story" },
         { href: "#services", label: "Services" },
         { href: "#process", label: "How It Works" },
-        { href: "#coverage", label: "Coverage" }
+        { href: "#story", label: "Our Story" }
       ],
       footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
@@ -45,10 +44,9 @@
     b2b: {
       headerNav: [
         { href: "/#hero", label: "Home" },
-        { href: "/#story", label: "Our Story" },
         { href: "/#services", label: "Services", active: true },
         { href: "/#process", label: "How It Works" },
-        { href: "/#coverage", label: "Coverage" }
+        { href: "/#story", label: "Our Story" }
       ],
       footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
@@ -68,10 +66,9 @@
     personal: {
       headerNav: [
         { href: "/#hero", label: "Home" },
-        { href: "/#story", label: "Our Story" },
         { href: "/#services", label: "Services", active: true },
         { href: "/#process", label: "How It Works" },
-        { href: "/#coverage", label: "Coverage" }
+        { href: "/#story", label: "Our Story" }
       ],
       footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
@@ -91,10 +88,9 @@
     us: {
       headerNav: [
         { href: "/#hero", label: "Home" },
-        { href: "/#story", label: "Our Story" },
         { href: "/#services", label: "Services", active: true },
         { href: "/#process", label: "How It Works" },
-        { href: "/#coverage", label: "Coverage" }
+        { href: "/#story", label: "Our Story" }
       ],
       footerCta: sharedFooterCta,
       footerNavTitle: "Navigate",
