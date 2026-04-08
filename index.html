@@ -58,9 +58,12 @@
       position: relative;
       overflow: hidden;
       background:
-        radial-gradient(circle at top right, rgba(85, 185, 72, 0.07), transparent 24%),
-        radial-gradient(circle at bottom left, rgba(85, 185, 72, 0.05), transparent 22%),
-        linear-gradient(180deg, #ffffff 0%, var(--dalfay-hero-bg) 100%);
+        linear-gradient(180deg, rgba(255, 255, 255, 0.98) 0%, rgba(255, 255, 255, 0.82) 28%, rgba(255, 255, 255, 0.36) 62%, rgba(255, 255, 255, 0.18) 100%),
+        linear-gradient(135deg, rgba(255, 255, 255, 0.96) 0%, rgba(255, 255, 255, 0.88) 20%, rgba(255, 255, 255, 0.52) 48%, rgba(255, 255, 255, 0.14) 78%),
+        url('assets/img/background.jpeg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
       padding: 80px 0 140px;
     }
 
@@ -107,36 +110,6 @@
       flex-wrap: wrap;
       margin-top: 38px;
       margin-bottom: 90px;
-    }
-
-    .hero-stats {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 24px;
-      max-width: 1020px;
-      margin-top: 0;
-    }
-
-    .hero-stat {
-      background: #fff;
-      border: 1px solid var(--dalfay-line);
-      border-radius: 24px;
-      padding: 34px 30px;
-      box-shadow: var(--dalfay-shadow);
-    }
-
-    .hero-stat h3 {
-      font-size: 38px;
-      font-weight: 900;
-      color: var(--dalfay-black);
-      margin-bottom: 8px;
-    }
-
-    .hero-stat p {
-      font-size: 16px;
-      line-height: 1.8;
-      color: var(--dalfay-muted);
-      margin: 0;
     }
 
     .section {
@@ -443,7 +416,6 @@
         margin-bottom: 70px;
       }
 
-      .hero-stats,
       .coverage-grid {
         grid-template-columns: 1fr;
       }
@@ -500,20 +472,6 @@
           <a href="#story" class="btn-outline-main">Read Our Story</a>
         </div>
 
-        <div class="hero-stats">
-          <div class="hero-stat">
-            <h3>$10M+</h3>
-            <p>In sales achieved through a real operating business built on trust, execution, and long-term relationships.</p>
-          </div>
-          <div class="hero-stat">
-            <h3>3 Service Lines</h3>
-            <p>Three distinct ways Dalfay serves businesses, families, and buyers who need access to better vehicles.</p>
-          </div>
-          <div class="hero-stat">
-            <h3>Custom Model</h3>
-            <p>Every case is quoted individually based on destination, sourcing needs, logistics, and the level of support required.</p>
-          </div>
-        </div>
       </div>
     </section>
 
