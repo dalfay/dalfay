@@ -1967,6 +1967,29 @@ section,
   background: rgba(255, 255, 255, 0.08);
 }
 
+.btn-launch-external {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 30px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: none;
+  transition: all .25s ease;
+  background: #ffffff;
+  color: var(--dalfay-black, #111111) !important;
+  border: 2px solid #ffffff;
+}
+
+.btn-launch-external:hover {
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--dalfay-black, #111111) !important;
+  border-color: #ffffff;
+  transform: translateY(-2px);
+}
+
 .footer {
   background: var(--dalfay-footer, #0f2230);
   color: #ffffff;

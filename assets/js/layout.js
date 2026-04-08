@@ -18,11 +18,10 @@
         { href: "#coverage", label: "Coverage" }
       ],
       footerCta: {
-        title: "Start with a consultation and build the right vehicle solution from there.",
-        text: "Dalfay is built for customers who want a serious partner, not a generic website. Explore the service line that fits your needs and move forward with confidence.",
+        title: "Auction Warriors is the sourcing backbone behind our vehicle access model.",
+        text: "Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.",
         buttons: [
-          { href: "/b2b-imports/", label: "B2B Imports", className: "btn-main" },
-          { href: "/personal-exports/", label: "Personal Export", className: "btn-outline-main footer-alt-btn" }
+          { href: "https://auctionwarriors.com", label: "Launch Auction Warriors", className: "btn-launch-external", external: true, icon: "bi-arrow-up-right" }
         ]
       },
       footerNavTitle: "Navigate",
@@ -140,7 +139,7 @@
   }
 
   function renderFooterButtons(items) {
-    return items.map((item) => `<a href="${item.href}" class="${item.className}">${item.label}</a>`).join("");
+    return items.map((item) => `<a href="${item.href}" class="${item.className}"${item.external ? ' target="_blank" rel="noopener noreferrer"' : ""}>${item.label}${item.icon ? ` <i class="bi ${item.icon}"></i>` : ""}</a>`).join("");
   }
 
   function renderHeader(config) {
