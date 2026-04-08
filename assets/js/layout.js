@@ -35,7 +35,7 @@
       ],
       footerLinksTitle: "Core Services",
       footerLinks: [
-        { href: "/b2b-imports/", label: "Import Solutions for Overseas Businesses" },
+        { href: "/b2b-imports/", label: "Import Solutions for Businesses" },
         { href: "/personal-exports/", label: "Personal Export Solutions" },
         { href: "/us-brokerage/", label: "U.S. Vehicle Brokerage" }
       ]
@@ -95,7 +95,7 @@
       ],
       footerLinksTitle: "Other Services",
       footerLinks: [
-        { href: "/b2b-imports/", label: "Import Solutions for Overseas Businesses" },
+        { href: "/b2b-imports/", label: "Import Solutions for Businesses" },
         { href: "/us-brokerage/", label: "U.S. Vehicle Brokerage" },
         { href: "/#coverage", label: "Coverage" }
       ]
@@ -125,7 +125,7 @@
       ],
       footerLinksTitle: "Other Services",
       footerLinks: [
-        { href: "/b2b-imports/", label: "Import Solutions for Overseas Businesses" },
+        { href: "/b2b-imports/", label: "Import Solutions for Businesses" },
         { href: "/personal-exports/", label: "Personal Export Solutions" },
         { href: "/#coverage", label: "Coverage" }
       ]
