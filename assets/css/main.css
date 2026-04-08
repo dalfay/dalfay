@@ -583,22 +583,23 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background-color: var(--accent-color);
-  width: 40px;
-  height: 40px;
-  border-radius: 4px;
+  background-color: #ffffff;
+  border: 2px solid #111111;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
   transition: all 0.4s;
 }
 
 .scroll-top i {
   font-size: 24px;
-  color: var(--contrast-color);
+  color: #111111;
   line-height: 0;
 }
 
 .scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
+  background-color: #ffffff;
+  color: #111111;
 }
 
 .scroll-top.active {

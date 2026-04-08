@@ -2,7 +2,7 @@
   "use strict";
 
   const sharedContact = {
-    address1: "3275 Stevens Creek Blvd, Suite 350",
+    address1: "3275 Stevens Creek Blvd",
     address2: "San Jose, CA 95117",
     email: "help@dalfay.com",
     shipping: "shipping@dalfay.com",
@@ -30,6 +30,7 @@
         { href: "#hero", label: "Home" },
         { href: "#story", label: "Our Story" },
         { href: "#services", label: "Services" },
+        { href: "#process", label: "How It Works" },
         { href: "#coverage", label: "Coverage" }
       ],
       footerLinksTitle: "Core Services",
