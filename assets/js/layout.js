@@ -191,6 +191,20 @@
 
   function renderFooter(config) {
     return `
+  <section class="footer-backbone">
+    <div class="container">
+      <div class="backbone-box">
+        <h3><a href="https://auctionwarriors.com" class="footer-plain-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.</h3>
+        <p>
+          Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.
+        </p>
+        <div class="footer-backbone-actions">
+          <a href="https://auctionwarriors.com" class="btn-main" target="_blank" rel="noopener noreferrer">Auction Warriors</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer id="footer" class="footer">
     <div class="footer-cta">
       <div class="container">
