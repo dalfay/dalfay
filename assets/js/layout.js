@@ -18,7 +18,7 @@
         { href: "#coverage", label: "Coverage" }
       ],
       footerCta: {
-        title: "Auction Warriors is the sourcing backbone behind our vehicle access model.",
+        titleHtml: `<a href="https://auctionwarriors.com" class="footer-plain-link" target="_blank" rel="noopener noreferrer">Auction Warriors</a> is the sourcing backbone behind our vehicle access model.`,
         text: "Across all three service lines, Dalfay uses Auction Warriors as a core sourcing channel. For customers ready to explore inventory, visit Auction Warriors to start the sourcing process right away.",
         buttons: [
           { href: "https://auctionwarriors.com", label: "Launch Auction Warriors", className: "btn-launch-external", external: true, icon: "bi-arrow-up-right" }
@@ -194,7 +194,7 @@
       <div class="container">
         <div class="row align-items-center gy-4">
           <div class="col-lg-8">
-            <h3>${config.footerCta.title}</h3>
+            <h3>${config.footerCta.titleHtml || config.footerCta.title}</h3>
             <p>
               ${config.footerCta.text}
             </p>

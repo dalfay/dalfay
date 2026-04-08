@@ -1977,17 +1977,41 @@ section,
   font-size: 15px;
   font-weight: 800;
   text-decoration: none;
-  transition: all .25s ease;
+  transition: none;
   background: #ffffff;
   color: var(--dalfay-black, #111111) !important;
   border: 2px solid #ffffff;
 }
 
 .btn-launch-external:hover {
-  background: rgba(255, 255, 255, 0.92);
+  background: #ffffff;
   color: var(--dalfay-black, #111111) !important;
   border-color: #ffffff;
-  transform: translateY(-2px);
+  transform: none;
+}
+
+.footer a.btn-launch-external,
+.footer a.btn-launch-external:hover,
+.footer a.btn-launch-external:focus,
+.footer a.btn-launch-external:active,
+.footer a.btn-launch-external:visited {
+  color: var(--dalfay-black, #111111) !important;
+}
+
+.footer-plain-link,
+.footer-plain-link:hover,
+.footer-plain-link:focus,
+.footer-plain-link:active,
+.footer-plain-link:visited {
+  color: inherit !important;
+  text-decoration: none;
+  transition: none;
+  animation: none;
+}
+
+.footer-plain-link:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .footer {
